@@ -33,9 +33,51 @@
             <li>Gain a loyal, loving companion</li>
         </ul>
 
-        <h3>Contact Us</h3>
-        <p>Address: 123 Main Street, Petville, USA</p>
-        <p>Email: <a href="mailto:info@localpets.com">info@localpets.com</a></p>
+        <!-- Contact section -->
+        <h2>Contacting Us</h2>
+        <p>If you are interested in adopting a pet or have any questions, please contact us using the form below:</p>
+
+        <!-- Contact Form for Pet Adoption -->
+        <form action="/contact" method="post" style="border: 1px solid #000; padding: 15px;">
+            <h3>Adoption Inquiry Form</h3>
+
+            <!-- Full name input -->
+            <label>Enter your full name:</label><br>
+            <input type="text" name="full-name" required><br><br>
+
+            <!-- Email input -->
+            <label>Enter your email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <!-- Phone number input -->
+            <label>Enter your phone:</label><br>
+            <input type="tel" name="phone"><br><br>
+
+            <!-- Pet preference options -->
+            <label>Which type of pet are you interested in adopting?</label><br>
+            <select name="pet-type" required>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <!-- Experience with pets -->
+            <label>Do you have previous experience with pets?</label><br>
+            <input type="radio" name="experience" value="Yes" required> Yes
+            <input type="radio" name="experience" value="No"> No<br><br>
+
+            <!-- Message or questions -->
+            <label>Any questions or comments:</label><br>
+            <textarea name="message"></textarea><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Inquiry">
+        </form>
+
+        <h3>Contact Information</h3>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: <a href="mailto:adopt@localpets.com">adopt@localpets.com</a></p>
     </section>
 
     <!-- Footer section -->
