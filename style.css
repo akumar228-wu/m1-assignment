@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    color: #4977d1;
+}
+
+p,
+li {
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #9ed034;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    background-color: #4977d1;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9ed034;
+}
+
+/* Main Section */
+main {
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Lists */
+ul {
+    list-style: disc;
+    padding-left: 1.5em;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+caption {
+    background-color: #852B1B;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: center;
+}
+
+thead {
+    background-color: #BDE1FF;
+}
+
+th:first-child,
+td:first-child {
+    background-color: #4977D1;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    margin-top: 1em;
+}
+
+form fieldset {
+    border: 2px solid #9ed034;
+    padding: 1em;
+    background-color: #f9f9f9;
+}
+
+form legend {
+    font-weight: bold;
+    color: #4977d1;
+}
+
+form label {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form .button {
+    text-align: right;
+}
+
+form .button input[type="submit"] {
+    background-color: #4977d1;
+    color: white;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form .button input[type="submit"]:hover {
+    background-color: #356bb1;
+}
+
+/* Footer */
+footer {
+    background-color: #ecfab8;
+    text-align: center;
+    padding: 1em 0;
+}
