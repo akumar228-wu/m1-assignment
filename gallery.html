@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adoptable-pets.html">Adoptable Pets</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <ul id="gallery"></ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Local Pet Adoption Service</p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    var photos = [];
+    var fileNames = [];
+    var imageList = [];
+    var image;
+    var openList = "<li id='photo'>";
+    var closeList = "</li>";
+
+    for (var i = 0; i < 15; i++) {
+        fileNames.push("download" + (i + 1));
+        photos.push("<img src='images/" + fileNames[i] + ".jpeg'>");
+        console.log(photos);
+        imageList.push(openList + photos[i] + closeList);
+    }
+
+    document.getElementById("gallery").innerHTML = imageList.join("");
+</script>
