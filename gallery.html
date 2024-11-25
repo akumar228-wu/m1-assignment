@@ -4,6 +4,31 @@
 <head>
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("body").append(`
+            <div id="lightbox">
+                <span class="close">&times;</span>
+                <img src="" alt="Lightbox Image">
+            </div>
+        `);
+
+
+            $("#gallery").on("click", "li img", function () {
+                var imgSrc = $(this).attr("src");
+                $("#lightbox img").attr("src", imgSrc);
+                $("#lightbox").fadeIn();
+            });
+
+
+            $("#lightbox .close, #lightbox").click(function () {
+                $("#lightbox").fadeOut();
+            });
+        });
+    </script>
 </head>
 
 <body>
